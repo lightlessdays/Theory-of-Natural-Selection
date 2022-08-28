@@ -17,6 +17,21 @@ The process begins with a set of individuals which is called a Population. Each 
 
 In our project, our population starts with a population of 10 individuals. They have four genes in their chromosome- R,G,B and size. The R,G,B (as the name suggest) stores R,G and B values for our individuals. It gives colour to the indiviual. The size gene, obviously, determines the size of our characters. 
 
-## Fitness Assignment of Genetic Algorithm
+```
+    //genes for color of gameobject
+    public float r;
+    public float g;
+    public float b;
+    private float a = 1;
 
-Fitness function is used to determine how fit an individual is? It means the ability of an individual to compete with other individuals. In every iteration, individuals are evaluated based on their fitness function. The fitness function provides a fitness score to each individual. This score further determines the probability of being selected for reproduction. The high the fitness score, the more chances of getting selected for reproduction.
+    //genes for size of gameObject
+    public float size;
+
+
+    //gene for storing age. this will allow us to find the longest lived person in the gene pool.
+    public float timeToDie = 0;
+```
+
+## 🏋️ Fitness Assignment of Genetic Algorithm
+
+Fitness function is used to determine how fit an individual is? It means the ability of an individual to compete with other individuals. In every iteration, individuals are evaluated based on their fitness function. The fitness function provides a fitness score to each individual. This score further determines the probability of being selected for reproduction. The high the fitness score, the more chances of getting selected for reproduction. In our project, we determine the fitness of an individual by how long they live.
