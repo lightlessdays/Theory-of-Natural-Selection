@@ -101,6 +101,6 @@ You can download the Unity project for this repository from Releases. Cheers! ðŸ
 
 ## TO-DO: Flowchart of the project 
 
-## Resources
+## ðŸŒ³ Resources
 1. [How Artificial intelligence learns | Genetic Algorithm explained](https://youtu.be/VnwjxityDLQ)
 2. [13. Learning: Genetic Algorithms | MIT OpenCourseWare](https://youtu.be/kHyNqSnzP8Y)
