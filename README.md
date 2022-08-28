@@ -1,2 +1,7 @@
-# Unity-Genetic-Algorithm
-A project based on genetic algorithm in machine learning, made with Unity 3D.
+# Genetic Algorithm in Unity
+A genetic algorithm is a search heuristic that is inspired by Charles Darwin’s theory of natural evolution. This algorithm reflects the process of natural selection where the fittest individuals are selected for reproduction in order to produce offspring of the next generation. Genetic Algorithms are being widely used in different real-world applications, for example, electronic circuits, code-breaking, image processing, and artificial creativity.
+
+## Natural Selection
+The process of natural selection starts with the selection of fittest individuals from a population. They produce offspring which inherit the characteristics of the parents and will be added to the next generation. If parents have better fitness, their offspring will be better than parents and have a better chance at surviving. This process keeps on iterating and at the end, a generation with the fittest individuals will be found. For instance, there are red bugs and green bugs in a hypothetical environment where predators (such as birds) prefer the taste of the green bugs, the red ones are more likely to survive. Soon there will be many red bugs and few green bugs. The red bugs will reproduce and make more red bugs, leading to a reality in which nearly all of the bugs born into this area will be red.
+
+<img src="https://i.pinimg.com/736x/96/45/63/9645630483efae0fabac0c411f73b5ce--life-science-teaching-science.jpg" width=30%>
