@@ -78,3 +78,18 @@ After selection of the fittest organism, we breed the organisms to produce a new
         return offSpring;
     }
 ```
+In some genetic algorithms, there is a thing called mutation. The mutation operator inserts random genes in the offspring (new child) to maintain the diversity in the population. It can be done by flipping some bits in the chromosomes. There are three kinds of mutations in genetic algorithm: 
+1. Flip Bit Mutation
+2. Gaussian Mutation
+3. Exchange/Swap Mutation
+
+In our project, the mutation happens in 5 of every 1000 organisms (or 1 of every 200 organisms). The mutation is handled by the else clause in GameManager script.
+```
+            DNA offSpringDNA = offSpring.GetComponent<DNA>();
+            offSpringDNA.r = Random.Range(0.0f, 1.0f);
+            offSpringDNA.g = Random.Range(0.0f, 1.0f);
+            offSpringDNA.b = Random.Range(0.0f, 1.0f);
+            offSpringDNA.size = Random.Range(0.25f, 5f);
+```
+## ⚠️ Termination Phase of Genetic Algorithm
+After the reproduction phase, a stopping criterion is applied as a base for termination. The algorithm terminates after the threshold fitness solution is reached. It will identify the final solution as the best solution in the population. Our project does not have a termination criteria because it can go on infinitely, as long as mutations keep occuring.
