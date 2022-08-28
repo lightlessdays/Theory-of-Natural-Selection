@@ -94,13 +94,24 @@ public class GameManager : MonoBehaviour
     {
         Vector3 pos = new Vector3(Random.Range(-9, 9), Random.Range(-4.5f, 4.5f), 0);
         GameObject offSpring = Instantiate(personPrefab, pos, Quaternion.identity);
-        DNA dna1 = parent1.GetComponent<DNA>();
-        DNA dna2 = parent2.GetComponent<DNA>();
-        DNA offSpringDNA = offSpring.GetComponent<DNA>();
-        offSpringDNA.r = Random.Range(0, 10) > 5 ? dna1.r : dna2.r;
-        offSpringDNA.g = Random.Range(0, 10) > 5 ? dna1.g : dna2.g;
-        offSpringDNA.b = Random.Range(0, 10) > 5 ? dna1.b : dna2.b;
-        offSpringDNA.size = Random.Range(0, 10) > 5 ? dna1.size : dna2.size;
+        if (Random.Range(1, 1000) > 5) {
+            DNA dna1 = parent1.GetComponent<DNA>();
+            DNA dna2 = parent2.GetComponent<DNA>();
+            DNA offSpringDNA = offSpring.GetComponent<DNA>();
+            offSpringDNA.r = Random.Range(0, 10) > 5 ? dna1.r : dna2.r;
+            offSpringDNA.g = Random.Range(0, 10) > 5 ? dna1.g : dna2.g;
+            offSpringDNA.b = Random.Range(0, 10) > 5 ? dna1.b : dna2.b;
+            offSpringDNA.size = Random.Range(0, 10) > 5 ? dna1.size : dna2.size;
+        }
+        else
+        {
+            DNA offSpringDNA = offSpring.GetComponent<DNA>();
+            offSpringDNA.r = Random.Range(0.0f, 1.0f);
+            offSpringDNA.g = Random.Range(0.0f, 1.0f);
+            offSpringDNA.b = Random.Range(0.0f, 1.0f);
+            offSpringDNA.size = Random.Range(0.25f, 5f);
+        }
+        
         return offSpring;
     }
 } 
