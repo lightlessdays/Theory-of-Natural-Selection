@@ -95,7 +95,7 @@ In our project, the mutation happens in 5 of every 1000 organisms (or 1 of every
 After the reproduction phase, a stopping criterion is applied as a base for termination. The algorithm terminates after the threshold fitness solution is reached. It will identify the final solution as the best solution in the population. Our project does not have a termination criteria because it can go on infinitely, as long as mutations keep occuring.
 
 ## ✨ Test out this project
-This project is hosted using GitHub actions. You can test out this project by clicking [here](https://lightlessdays.github.io/Unity-Genetic-Algorithm/). Clicking on an organism will kill that organism. Each generation will last for 10 seconds. In the end, only the most desirable traits will remain (with some mutations in 1 of every 200 organisms).
+This project is hosted using GitHub actions. You can test out this project by clicking [here](https://lightlessdays.github.io/Theory-of-Natural-Selection/). Clicking on an organism will kill that organism. Each generation will last for 10 seconds. In the end, only the most desirable traits will remain (with some mutations in 1 of every 200 organisms).
 
 You can download the Unity project for this repository from Releases. Cheers! 🍻
 
