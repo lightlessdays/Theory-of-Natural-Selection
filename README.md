@@ -57,3 +57,24 @@ In our project, we have used the Rank Based Selection method to select the fitte
             population.Add(Breed(sortedList[i + 1], sortedList[i]));
         }
 ```
+
+## 🍆 Reproduction Phase of Genetic Algorithm
+After selection of the fittest organism, we breed the organisms to produce a new offspring with qualities of the fittest organism. This process involves taking genes from both parents and merging them to create a new organism. In our project, we randomly take r,g,b and size genes from two fittest organism and breed them to produce a healthy offspring.
+
+```
+    //BREEDING ALGORITHM: The breeding algorithm is probably the simplest of all, first, it chooses a random number between 1 and 10. If the number is greater than 5, it returns true and if it is less than 5, it returns false. If it is true, the child is exact replica of parent1 and if it is false, it is the exact replica of parent2. but since we are using different things it might happen that the child inherits r and b values from parent1 and g and size values from parent2, so it is basically a mixture of the properties of both parents... and it is completely pseudo randomized.
+    //finally we form an offspring and return it as a gameobject.
+    GameObject Breed(GameObject parent1, GameObject parent2)
+    {
+        Vector3 pos = new Vector3(Random.Range(-9, 9), Random.Range(-4.5f, 4.5f), 0);
+        GameObject offSpring = Instantiate(personPrefab, pos, Quaternion.identity);
+        DNA dna1 = parent1.GetComponent<DNA>();
+        DNA dna2 = parent2.GetComponent<DNA>();
+        DNA offSpringDNA = offSpring.GetComponent<DNA>();
+        offSpringDNA.r = Random.Range(0, 10) > 5 ? dna1.r : dna2.r;
+        offSpringDNA.g = Random.Range(0, 10) > 5 ? dna1.g : dna2.g;
+        offSpringDNA.b = Random.Range(0, 10) > 5 ? dna1.b : dna2.b;
+        offSpringDNA.size = Random.Range(0, 10) > 5 ? dna1.size : dna2.size;
+        return offSpring;
+    }
+```
