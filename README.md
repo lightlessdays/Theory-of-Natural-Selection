@@ -98,3 +98,5 @@ After the reproduction phase, a stopping criterion is applied as a base for term
 This project is hosted using GitHub actions. You can test out this project by clicking [here](https://lightlessdays.github.io/Unity-Genetic-Algorithm/). Clicking on an organism will kill that organism. Each generation will last for 10 seconds. In the end, only the most desirable traits will remain (with some mutations in 1 of every 200 organisms).
 
 You can download the Unity project for this repository from Releases. Cheers! 🍻
+
+## TO-DO: Flowchart of the project 
