@@ -34,4 +34,10 @@ In our project, our population starts with a population of 10 individuals. They 
 
 ## 🏋️ Fitness Assignment of Genetic Algorithm
 
-Fitness function is used to determine how fit an individual is? It means the ability of an individual to compete with other individuals. In every iteration, individuals are evaluated based on their fitness function. The fitness function provides a fitness score to each individual. This score further determines the probability of being selected for reproduction. The high the fitness score, the more chances of getting selected for reproduction. In our project, we determine the fitness of an individual by how long they live.
+Fitness function is used to determine how fit an individual is? It means the ability of an individual to compete with other individuals. In every iteration, individuals are evaluated based on their fitness function. The fitness function provides a fitness score to each individual. This score further determines the probability of being selected for reproduction. The high the fitness score, the more chances of getting selected for reproduction. In our project, we determine the fitness of an individual by how long they live. The longer they live, the more is their fitness score. This is stored in a variable named timeToDie.
+
+## Selection Phase of Genetic Algorithm
+The selection phase involves the selection of individuals for the reproduction of offspring. All the selected individuals are then arranged in a pair of two to increase reproduction. Then these individuals transfer their genes to the next generation. The selection can proceed in one of the three ways:
+1. Roulette Wheel
+2. Tournament
+3. Rank Based
