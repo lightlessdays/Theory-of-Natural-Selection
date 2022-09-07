@@ -1,4 +1,4 @@
-# 🧬 Genetic Algorithms
+# 🧬 Genetic Algorithms 
 A genetic algorithm is a search heuristic that is inspired by [Charles Darwin’s theory of natural selection](https://www.khanacademy.org/science/ap-biology/natural-selection/natural-selection-ap/a/darwin-evolution-natural-selection). This algorithm reflects the process of natural selection where the fittest individuals are selected for reproduction in order to produce offspring of the next generation. Genetic Algorithms are being widely used in different real-world applications, for example, electronic circuits, code-breaking, image processing, and artificial creativity.
 
 ## 🪲 The Process of Natural Selection
